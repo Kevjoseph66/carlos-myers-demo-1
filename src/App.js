@@ -25,7 +25,7 @@ import pdfProyectosComerciales from "./assets/archivos/proyectos comerciales.pdf
 import pdfCocinas from "./assets/archivos/Cocinas.pdf";
 import pdfDisenoInterior from "./assets/archivos/Diseño interior.pdf";
 import pdfProyectosInvestigacion from "./assets/archivos/Proyectos de investigacion.pdf";
-import pdfServiciosOnline from "./assets/archivos/CMA+ Oferta de Servicios ONLINE.pdf";
+import pdfServiciosOnline from "./assets/archivos/CMA+ OFERTAS DE SERVICOS ONLINE FINAL.pdf";
 import { ResponsiveEmbed, Button } from "react-bootstrap";
 
 // get our fontawesome imports
