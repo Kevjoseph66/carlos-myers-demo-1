@@ -193,7 +193,19 @@ class App extends Component {
                 académica y laboral en ella, para lo cual existen una serie de
                 proyectos y alianzas a desarrollarse en este 2020. ¿Te sumas?
               </p>
-              <Row justify="end" style={{ marginRight: "0" }}>
+
+              <div className="cinta resumen">
+                <a
+                  href={pdfCurriculum}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  {" "}
+                  <p>RESÚMEN Curricular</p>
+                </a>
+              </div>
+              {/* <Row justify="end" style={{ marginRight: "0" }}>
                 <Col
                   md={3}
                   className="super-center s  "
@@ -229,7 +241,7 @@ class App extends Component {
                     )}
                   </a>
                 </Col>
-              </Row>
+              </Row> */}
             </Col>
           </Row>
           <Row
@@ -437,7 +449,7 @@ class App extends Component {
               style={{ marginBottom: "1em" }}
             >
               <Button
-                className="mb-3"
+                className="mb-3 btn-asesoria"
                 size="lg"
                 href={pdfServiciosOnline}
                 rel="noopener noreferrer"

@@ -357,3 +357,12 @@ a:hover {
   padding: 10px 20px;
   margin-left: -0.46em;
 }
+
+.cinta.resumen {
+  font-size: 22px;
+  padding: 20px 20px;
+}
+
+.btn-asesoria {
+  background-color: #1d70b7 !important;
+}
