@@ -181,7 +181,7 @@ class App extends Component {
 
               <p>
                 Todos los proyectos y eventos que se realizan a través de mi
-                organización generan un porcentaje de Capital destinado a
+                organización generan un porcentaje de capital destinado a
                 proyectos con esas características.
               </p>
 

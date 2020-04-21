@@ -361,6 +361,7 @@ a:hover {
 .cinta.resumen {
   font-size: 22px;
   padding: 20px 20px;
+  margin-left: -0.76em;
 }
 
 .btn-asesoria {
