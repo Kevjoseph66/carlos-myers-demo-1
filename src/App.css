@@ -367,3 +367,10 @@ a:hover {
 .btn-asesoria {
   background-color: #1d70b7 !important;
 }
+.impacto {
+  display: flex;
+  justify-content: flex-end !important;
+}
+.btn-impacto {
+  background-color: #1d70b7 !important;
+}
