@@ -19,6 +19,9 @@ html {
   font-family: "CenturyGothic";
   box-sizing: inherit;
 }
+img {
+  max-width: 100%;
+}
 
 a {
   color: white !important;
@@ -137,7 +140,7 @@ a:hover {
 .cv-resumen {
   position: absolute;
 }
-.boton-azul {
+/* .boton-azul {
   width: 30%;
 }
 @media (min-width: 786px) {
@@ -145,10 +148,10 @@ a:hover {
     position: absolute;
     width: 65%;
   }
-}
+} */
 
 .servicios {
-  padding: 0 3em;
+  /* padding: 0 3em; */
   text-align: center;
   justify-content: center;
   align-content: center;
@@ -156,7 +159,7 @@ a:hover {
 }
 
 .servicios h1 {
-  padding-left: 2em;
+  /* padding-left: 2em; */
   margin: 1em 0;
   font-weight: bold;
   font-size: 56px;
@@ -202,9 +205,22 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-size: 60px;
+
   color: white;
   font-weight: bold;
+}
+
+.pdf-portafolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+}
+
+@media (min-width: 768px) {
+  .pdf-portafolio {
+    font-size: 60px;
+  }
 }
 
 /* .portafolio .title-portafolio{
@@ -252,9 +268,7 @@ a:hover {
     align-items: flex-end !important;
   }
 }
-.btn-asesoria {
-  margin-bottom: 1px;
-}
+
 .redes-sociales {
   display: flex;
   justify-content: center;
@@ -263,6 +277,8 @@ a:hover {
 
 .redes-sociales a {
   margin-left: 10px;
+  display: flex;
+  align-items: flex-end;
 }
 
 @media (min-width: 768px) {
@@ -276,7 +292,7 @@ a:hover {
     display: block;
     border-right: 1px solid #fff;
     height: 60px;
-    top: 14px;
+    top: -11px;
     left: 68px;
   }
 }
@@ -292,6 +308,12 @@ a:hover {
 .contacto input {
   font-size: 26px !important;
   margin-bottom: 15px;
+  width: 100%;
+}
+@media (min-width: 786px) {
+  .contacto input {
+    width: 70%;
+  }
 }
 
 .contacto textarea {
@@ -308,6 +330,7 @@ a:hover {
 }
 
 .boton {
+  width: 100%;
   cursor: pointer;
   border-radius: 0px;
   text-decoration: none;
@@ -322,6 +345,14 @@ a:hover {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    width: auto;
+    flex: 0 0 auto;
+  }
 }
 
 .boton-dark {
@@ -359,7 +390,7 @@ a:hover {
 }
 
 .cinta.resumen {
-  font-size: 22px;
+  font-size: 20px;
   padding: 20px 20px;
   margin-left: -0.76em;
 }
@@ -369,7 +400,12 @@ a:hover {
 }
 .impacto {
   display: flex;
-  justify-content: flex-end !important;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .impacto {
+    justify-content: flex-end !important;
+  }
 }
 .btn-impacto {
   background-color: #1d70b7 !important;

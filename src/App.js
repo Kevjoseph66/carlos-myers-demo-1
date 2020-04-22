@@ -191,7 +191,8 @@ class App extends Component {
                 de Venezuela con la intención de impactar positivamente en la
                 motivación, disposición y energía de quienes hacen vida
                 académica y laboral en ella, para lo cual existen una serie de
-                proyectos y alianzas a desarrollarse en este 2020. ¿Te sumas?
+                proyectos y alianzas a desarrollarse en este 2020.{" "}
+                <span>¿Te sumas?</span>
               </p>
 
               <div className="cinta resumen">
@@ -202,7 +203,10 @@ class App extends Component {
                   style={{ width: "100%", height: "100%" }}
                 >
                   {" "}
-                  <p>RESÚMEN Curricular</p>
+                  <p>
+                    {" "}
+                    <span>Resúmen</span> Curricular
+                  </p>
                 </a>
               </div>
               {/* <Row justify="end" style={{ marginRight: "0" }}>
@@ -409,19 +413,26 @@ class App extends Component {
             </Col>
           </Row>
           <Row
-            className="portafolio super-center"
+            className="portafolio"
             id="portafolio"
             style={{ marginRight: "0", marginLeft: "0" }}
           >
             <a
               href={pdfPortafolioMyers}
-              className="super-center"
+              className="pdf-portafolio"
               rel="noopener noreferrer"
               target="_blank"
-              style={{ width: "100%", height: "100%" }}
+              style={{
+                width: "100%",
+                height: "100%"
+              }}
             >
               <span className="title-portafolio">PORTAFOLIO</span>
-              <img src={logoAzul} alt="" style={{ marginLeft: ".3em" }} />
+              <img
+                src={logoAzul}
+                alt="logo azul"
+                style={{ marginLeft: ".3em" }}
+              />
             </a>
           </Row>
           <Row
@@ -457,11 +468,11 @@ class App extends Component {
             </Col>
             <Col
               md={6}
-              className="contacto-right ml-auto"
-              style={{ marginBottom: "1em" }}
+              className="contacto-right ml-auto mb-3"
+              // style={{ marginBottom: "1em" }}
             >
               <Button
-                className="mb-3 btn-asesoria"
+                className="mb-3 mb-md-0 btn-asesoria"
                 size="lg"
                 href={pdfServiciosOnline}
                 rel="noopener noreferrer"
@@ -504,7 +515,12 @@ class App extends Component {
                 </a>
               </div>
 
-              <img src={logoBlanco} alt="logo" style={{ marginLeft: "30px" }} />
+              <img
+                src={logoBlanco}
+                alt="logo"
+                className="mt-3 mt-md-0"
+                style={{ marginLeft: "30px" }}
+              />
             </Col>
           </Row>
         </Container>
