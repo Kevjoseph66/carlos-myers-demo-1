@@ -468,8 +468,8 @@ class App extends Component {
             </Col>
             <Col
               md={6}
-              className="contacto-right ml-auto mb-3"
-              // style={{ marginBottom: "1em" }}
+              className="contacto-right ml-auto"
+              style={{ marginBottom: "1em" }}
             >
               <Button
                 className="mb-3 mb-md-0 btn-asesoria"
