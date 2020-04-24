@@ -261,7 +261,7 @@ a:hover {
     padding: 0 !important;
     background-image: url("./assets/imgs/planos.png");
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 35vw;
     font-size: 60px;
     color: white;
     display: flex;
