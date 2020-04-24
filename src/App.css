@@ -121,11 +121,17 @@ a:hover {
 }
 
 .nosotros-texto > p {
-  padding-left: 3.5em;
-  padding-right: 3.5em;
+  padding-left: 1em;
+  padding-right: 1em;
   margin: 1em 0;
   font-size: 22px;
   line-height: 1.7em;
+}
+@media (min-width: 768px) {
+  .nosotros-texto > p {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+  }
 }
 
 .nosotros-texto > p > span {
@@ -307,7 +313,7 @@ a:hover {
 }
 
 .contacto .contacto-left {
-  padding: 4em 6em;
+  padding: 4em 2em;
 }
 
 .contacto h1 {
