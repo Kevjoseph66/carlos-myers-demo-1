@@ -67,10 +67,14 @@ class App extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    console.log(this.state);
+
+    var service_id = "default_service";
+    var template_id = "carlos_myers";
     emailjs
       .send(
-        "default_service",
-        "carlos-myers",
+        service_id,
+        template_id,
         this.state.contact,
         "user_IB3mLi5PHx04FveOkgm8O"
       )
@@ -514,7 +518,13 @@ class App extends Component {
                 <div>
                   <label>TELÉFONO</label>
                   <br />
-                  <input placeholder="" type="text" />
+                  <input
+                    placeholder=""
+                    type="text"
+                    name="emailTitle"
+                    value={this.state.contact.emailTitle}
+                    onChange={this.handleChange}
+                  />
                 </div>
                 <div>
                   <label>MENSAJE</label>
