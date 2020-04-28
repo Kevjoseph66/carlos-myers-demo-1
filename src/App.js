@@ -37,6 +37,8 @@ import {
   faInstagramSquare
 } from "@fortawesome/free-brands-svg-icons";
 
+import emailjs from "emailjs-com";
+
 class App extends Component {
   state = {
     s1: false,
@@ -45,7 +47,51 @@ class App extends Component {
     s4: false,
     s5: false,
     s6: false,
-    modalShow: false
+    modalShow: false,
+    contact: {
+      userEmail: "",
+      concernCategory: "",
+      emailTitle: "",
+      emailDetails: ""
+    },
+    showMessage: false
+  };
+
+  handleChange = e => {
+    const { name, value } = e.target;
+    this.setState({
+      ...this.state,
+      contact: { ...this.state.contact, [name]: value }
+    });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    emailjs
+      .send(
+        "default_service",
+        "carlos-myers",
+        this.state.contact,
+        "user_IB3mLi5PHx04FveOkgm8O"
+      )
+      .then(
+        response => {
+          console.log("SUCCESS!", response.status, response.text);
+          this.setState({
+            ...this.state,
+            contact: {
+              userEmail: "",
+              concernCategory: "",
+              emailTitle: "",
+              emailDetails: ""
+            },
+            showMessage: true
+          });
+        },
+        err => {
+          console.log("FAILED...", err);
+        }
+      );
   };
 
   mouseEnter = nombre => {
@@ -442,16 +488,28 @@ class App extends Component {
           >
             <Col md={6} className="contacto-left">
               <h1>CONTACTO</h1>
-              <form>
+              <form onSubmit={this.handleSubmit}>
                 <div>
                   <label>NOMBRE</label>
                   <br />
-                  <input placeholder="" type="text" />
+                  <input
+                    placeholder=""
+                    type="text"
+                    value={this.state.contact.concernCategory}
+                    onChange={this.handleChange}
+                    name="concernCategory"
+                  />
                 </div>
                 <div>
                   <label>CORREO</label>
                   <br />
-                  <input placeholder="" type="text" />
+                  <input
+                    placeholder=""
+                    type="text"
+                    value={this.state.contact.userEmail}
+                    name="userEmail"
+                    onChange={this.handleChange}
+                  />
                 </div>
                 <div>
                   <label>TELÉFONO</label>
@@ -461,9 +519,21 @@ class App extends Component {
                 <div>
                   <label>MENSAJE</label>
                   <br />
-                  <textarea placeholder="" type="text" />
+                  <textarea
+                    type="text"
+                    required
+                    name="emailDetails"
+                    onChange={this.handleChange}
+                    value={this.state.contact.emailDetails}
+                  ></textarea>
                 </div>
-                <button className="boton boton-dark">ENVIAR</button>
+                <button
+                  type="submit"
+                  value="Submit"
+                  className="boton boton-dark"
+                >
+                  ENVIAR
+                </button>
               </form>
             </Col>
             <Col
