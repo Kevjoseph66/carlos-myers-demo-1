@@ -11,7 +11,6 @@ import logo from "./assets/imgs/logo-vertical.jpg";
 import logoAzul from "./assets/imgs/Logo-azul.png";
 import logoBlanco from "./assets/imgs/logo.png";
 
-import botonAzul from "./assets/imgs/Boton-azul.png";
 import nube from "./assets/imgs/Nube-1.png";
 import banner1 from "./assets/imgs/1.png";
 import banner2 from "./assets/imgs/2.png";
